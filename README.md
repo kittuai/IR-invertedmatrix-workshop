@@ -37,17 +37,39 @@ We apply standard Information Retrieval (IR) techniques on real text to show how
 
 ---
 
-## How to Run
+## Getting Started
 
-1. Clone the repository:
+1. **Clone the Repository**
    ```
    git clone https://github.com/kittuai/IR-invertedmatrix-workshop.git
    cd IR-invertedmatrix-workshop
    ```
 
-2. Open the notebook in Jupyter Lab or VS Code.
+2. **Set Up a Virtual Environment**
+   ```
+   python -m venv env
+   ```
 
-3. Run each step: Document loading → Tokenizer → Normalization → Index → Queries.
+   **Activate it:**  
+   - **Windows (CMD):** `env\Scripts\activate`  
+   - **PowerShell:** `.\env\Scripts\Activate.ps1`  
+   - **macOS/Linux:** `source env/bin/activate`
+
+3. **Install Requirements**
+   *(Install any packages you need for the notebook)*  
+   ```
+   pip install scikit-learn nltk jupyter
+   ```
+
+4. **Add Jupyter Kernel**
+   ```
+   python -m ipykernel install --user --name=env --display-name "Python (env)"
+   ```
+
+5. **Run the Notebook**
+   - Open `IR_InvertedMatrix_Workshop.ipynb` in VS Code or Jupyter Lab.
+   - Set the kernel to **Python (env)**.
+   - Run all cells step by step.
 
 ---
 
